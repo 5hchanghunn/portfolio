@@ -41,7 +41,7 @@ export default function Hero() {
           <FadeIn delay={0.6} y={30}>
             <div className="flex h-[220px] w-[220px] items-end justify-center overflow-hidden rounded-full border border-[#D7E2EA]/40 bg-white/[0.03] backdrop-blur-sm sm:h-[280px] sm:w-[280px] md:h-[340px] md:w-[340px]">
               <img
-                src="/portrait.png"
+                src={`${import.meta.env.BASE_URL}portrait.png`}
                 alt=""
                 className="h-full w-full object-cover object-top"
               />
