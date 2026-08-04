@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0c0c0c;
-  --ink: #d7e2ea;
-  --ink-dim: #8b95a0;
+  --bg: #ffffff;
+  --bg-tint: #f5f5f7;
+  --ink: #1d1d1f;
+  --ink-dim: #6e6e73;
+  --hairline: #d2d2d7;
+  --accent: #0071e3;
 }
 
 * {
@@ -19,7 +22,14 @@ body,
 }
 
 body {
-  font-family: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'SF Pro Display',
+    'Pretendard Variable',
+    'Pretendard',
+    'Segoe UI',
+    sans-serif;
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   word-break: keep-all;
@@ -30,13 +40,8 @@ body {
   overflow-x: clip;
 }
 
-.font-display {
-  font-family: 'Space Grotesk', 'Pretendard Variable', 'Pretendard', sans-serif;
-}
-
 .hero-heading {
-  font-family: 'Space Grotesk', 'Pretendard Variable', 'Pretendard', sans-serif;
-  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  background: linear-gradient(180deg, #1d1d1f 0%, #6e6e73 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,12 +49,12 @@ body {
 }
 
 ::selection {
-  background: #bbccd7;
-  color: #0c0c0c;
+  background: #0071e3;
+  color: #ffffff;
 }
 
 :focus-visible {
-  outline: 2px solid #bbccd7;
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 

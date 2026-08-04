@@ -40,10 +40,20 @@ export const labNotes = [
   },
 ]
 
+export const projects = [
+  {
+    title: 'THIS IS FOOTBALL',
+    tagline: '나만의 전술로 승부하는 축구 감독 시뮬레이터',
+    body: '월드컵 데이터로 전술을 짜고, 경기를 지휘하고, 기자회견까지 — 감독의 90분을 직접 플레이하는 웹 시뮬레이션.',
+    stats: ['16개국', '4가지 감독 유형', '5가지 포메이션'],
+    url: 'https://this-is-football.vercel.app',
+  },
+]
+
 export const marqueeRow1 = [
-  'PYTHON',
+  'Python',
   'CNN',
-  'ALEXNET',
+  'AlexNet',
   '딥러닝',
   '회로이론',
   '신호처리',
@@ -51,7 +61,7 @@ export const marqueeRow1 = [
   '로보틱스',
   '센서',
   '액추에이터',
-  'PHYSICAL AI',
+  'Physical AI',
 ]
 
 export const marqueeRow2 = [

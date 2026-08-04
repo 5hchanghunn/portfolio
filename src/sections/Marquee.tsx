@@ -7,7 +7,7 @@ function tripleRow(items: string[]) {
 
 function Tile({ label }: { label: string }) {
   return (
-    <div className="flex h-[64px] shrink-0 items-center whitespace-nowrap rounded-2xl border border-[#D7E2EA]/20 bg-white/[0.02] px-8 text-sm font-medium uppercase tracking-wider text-[#D7E2EA]/80 sm:h-[80px] sm:text-base">
+    <div className="flex h-[52px] shrink-0 items-center whitespace-nowrap rounded-full border border-[#d2d2d7] bg-[#f5f5f7] px-6 text-sm font-medium text-[#1d1d1f]/70 sm:h-[60px] sm:px-7">
       {label}
     </div>
   )
@@ -34,7 +34,7 @@ export default function Marquee() {
   const row2 = tripleRow(marqueeRow2)
 
   return (
-    <section ref={sectionRef} className="overflow-x-clip pb-10 pt-24 sm:pt-32 md:pt-40">
+    <section ref={sectionRef} className="overflow-x-clip bg-white pb-16 pt-4 sm:pb-20">
       <div
         className="mb-3 flex gap-3"
         style={{ transform: `translateX(${offset - 200}px)`, willChange: 'transform' }}
