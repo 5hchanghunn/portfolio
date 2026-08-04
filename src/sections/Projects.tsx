@@ -19,9 +19,14 @@ export default function Projects() {
             className="overflow-hidden rounded-3xl border border-[#d2d2d7] bg-white shadow-[0_20px_50px_-25px_rgba(0,0,0,0.15)]"
           >
             <div className="p-8 sm:p-10">
-              <h3 className="text-2xl font-bold tracking-tight text-[#1d1d1f]">
-                {project.title}
-              </h3>
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="text-2xl font-bold tracking-tight text-[#1d1d1f]">
+                  {project.title}
+                </h3>
+                <span className="rounded-full bg-[#0071e3]/10 px-2.5 py-0.5 text-xs font-semibold text-[#0071e3]">
+                  Vibe Coding
+                </span>
+              </div>
               <p className="mt-2 text-base font-medium text-[#0071e3]">{project.tagline}</p>
               <p className="mt-4 max-w-xl leading-relaxed text-[#6e6e73]">{project.body}</p>
 
@@ -44,6 +49,8 @@ export default function Projects() {
               >
                 사이트 보러 가기 →
               </a>
+
+              <p className="mt-4 text-xs text-[#6e6e73]">{project.buildNote}</p>
             </div>
           </FadeIn>
         ))}
