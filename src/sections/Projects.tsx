@@ -1,4 +1,5 @@
 import FadeIn from '../components/FadeIn'
+import MiniScoreboard from '../components/MiniScoreboard'
 import { projects } from '../data/profile'
 
 export default function Projects() {
@@ -40,6 +41,12 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
+
+              {project.title === 'THIS IS FOOTBALL' && (
+                <div className="mt-6">
+                  <MiniScoreboard />
+                </div>
+              )}
 
               <a
                 href={project.url}
