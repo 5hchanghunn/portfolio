@@ -11,7 +11,7 @@ export const timeline = [
   {
     tag: '군 복무',
     title: '육군 병장 만기전역',
-    body: '맡은 일을 끝까지 완수하는 법을 배운 시간.',
+    body: '',
   },
   {
     tag: '대학',
@@ -21,7 +21,7 @@ export const timeline = [
   {
     tag: '현재',
     title: '연구실 합류',
-    body: '멀티모달부터 CNN까지, 매주 세미나 자료를 꾸준히 쌓아가는 중.',
+    body: '멀티모달부터 CNN까지, 세미나 자료를 꾸준히 쌓아가는 중.',
   },
 ]
 
@@ -98,32 +98,11 @@ export const projects = [
     body: '월드컵 데이터로 전술을 짜고, 경기를 지휘하고, 기자회견까지 — 감독의 90분을 직접 플레이하는 웹 시뮬레이션.',
     stats: ['16개국', '4가지 감독 유형', '5가지 포메이션'],
     buildNote: 'AI와 함께 바이브 코딩으로 제작했습니다.',
+    image: 'projects/this-is-football.png',
     url: 'https://5hchanghunn.github.io/this-is-football/',
   },
 ]
 
-export const marqueeRow1 = [
-  'Python',
-  'CNN',
-  'AlexNet',
-  'MLP',
-  '역전파',
-  'DNN',
-  'TensorFlow',
-  'Keras',
-  '멀티모달',
-  'Physical AI',
-]
+export const marqueeRow1 = ['Python', 'CNN', 'AlexNet', 'MLP', '역전파', 'DNN', 'Physical AI']
 
-export const marqueeRow2 = [
-  '전기전자',
-  '임베디드',
-  '미니배치',
-  '영상인식',
-  '회로이론',
-  '신호처리',
-  '제어공학',
-  '로보틱스',
-  '센서',
-  '액추에이터',
-]
+export const marqueeRow2 = ['TensorFlow', 'Keras', '멀티모달', '전기전자', '미니배치', '영상인식']

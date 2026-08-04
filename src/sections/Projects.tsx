@@ -1,5 +1,4 @@
 import FadeIn from '../components/FadeIn'
-import MiniScoreboard from '../components/MiniScoreboard'
 import { projects } from '../data/profile'
 
 export default function Projects() {
@@ -22,6 +21,16 @@ export default function Projects() {
             delay={0.1}
             className="overflow-hidden rounded-3xl border border-[#d2d2d7] bg-white shadow-[0_20px_50px_-25px_rgba(0,0,0,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(0,113,227,0.25)]"
           >
+            {project.image && (
+              <a href={project.url} target="_blank" rel="noreferrer" className="block">
+                <img
+                  src={`${import.meta.env.BASE_URL}${project.image}`}
+                  alt={`${project.title} 실제 플레이 화면`}
+                  className="w-full border-b border-[#d2d2d7] object-cover object-top"
+                  style={{ maxHeight: 320 }}
+                />
+              </a>
+            )}
             <div className="p-8 sm:p-10">
               <div className="flex flex-wrap items-center gap-2">
                 <h3 className="text-2xl font-bold tracking-tight text-[#1d1d1f]">
@@ -44,12 +53,6 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-
-              {project.title === 'THIS IS FOOTBALL' && (
-                <div className="mt-6">
-                  <MiniScoreboard />
-                </div>
-              )}
 
               <a
                 href={project.url}

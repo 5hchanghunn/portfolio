@@ -38,7 +38,9 @@ export default function Journey() {
                 <h3 className="text-lg font-semibold tracking-tight text-[#1d1d1f] sm:text-xl">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#6e6e73]">{item.body}</p>
+                {item.body && (
+                  <p className="mt-2 text-sm leading-relaxed text-[#6e6e73]">{item.body}</p>
+                )}
               </FadeIn>
             )
           })}
