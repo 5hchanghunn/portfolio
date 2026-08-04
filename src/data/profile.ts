@@ -1,4 +1,6 @@
 export const contactEmail = 'och040331@gmail.com'
+export const githubHandle = '5hchanghunn'
+export const githubUrl = `https://github.com/${githubHandle}`
 
 export const timeline = [
   {
