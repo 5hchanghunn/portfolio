@@ -48,7 +48,7 @@ export const projects = [
     tagline: '나만의 전술로 승부하는 축구 감독 시뮬레이터',
     body: '월드컵 데이터로 전술을 짜고, 경기를 지휘하고, 기자회견까지 — 감독의 90분을 직접 플레이하는 웹 시뮬레이션.',
     stats: ['16개국', '4가지 감독 유형', '5가지 포메이션'],
-    url: 'https://this-is-football.vercel.app',
+    url: 'https://5hchanghunn.github.io/this-is-football/',
   },
 ]
 
