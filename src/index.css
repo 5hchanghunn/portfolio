@@ -48,6 +48,37 @@ body {
   color: transparent;
 }
 
+.ambient-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.ambient-glow::before,
+.ambient-glow::after {
+  content: '';
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.5;
+}
+
+.ambient-glow::before {
+  top: -180px;
+  left: -120px;
+  background: radial-gradient(circle, rgba(0, 113, 227, 0.35), transparent 70%);
+}
+
+.ambient-glow::after {
+  top: -60px;
+  right: -160px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.28), transparent 70%);
+}
+
 .spark-dot {
   position: absolute;
   width: 5px;

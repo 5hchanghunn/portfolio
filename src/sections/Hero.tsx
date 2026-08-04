@@ -12,7 +12,9 @@ const navLinks = [
 export default function Hero() {
   return (
     <header id="top" className="relative overflow-x-clip bg-white">
-      <FadeIn delay={0} y={-12}>
+      <div className="ambient-glow" />
+
+      <FadeIn delay={0} y={-12} className="relative z-10">
         <nav className="sticky top-0 z-20 flex items-center justify-between border-b border-[#d2d2d7]/60 bg-white/80 px-6 py-4 backdrop-blur-md md:px-10">
           <a href="#top" className="text-sm font-semibold tracking-tight text-[#1d1d1f]">
             한남대 AI융합학과
@@ -31,7 +33,7 @@ export default function Hero() {
         </nav>
       </FadeIn>
 
-      <div className="mx-auto flex max-w-3xl flex-col items-center px-6 pb-20 pt-20 text-center sm:pt-28 md:pb-28 md:pt-36">
+      <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 pb-20 pt-20 text-center sm:pt-28 md:pb-28 md:pt-36">
         <FadeIn delay={0.1} y={24}>
           <span className="mb-5 inline-block text-sm font-medium text-[#0071e3]">
             한남대학교 AI융합학과 2학년 · 전기전자공학 복수전공

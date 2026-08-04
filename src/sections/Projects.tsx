@@ -4,7 +4,10 @@ import { projects } from '../data/profile'
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-[#f5f5f7] px-5 py-24 sm:px-8 sm:py-32 md:px-10">
+    <section
+      id="projects"
+      className="relative z-10 -mt-8 rounded-t-[40px] bg-[#f5f5f7] px-5 py-24 shadow-[0_-1px_0_rgba(0,0,0,0.04)] sm:rounded-t-[56px] sm:px-8 sm:py-32 md:px-10"
+    >
       <FadeIn delay={0} y={30} className="mx-auto mb-16 max-w-3xl text-center sm:mb-20">
         <span className="mb-3 block text-sm font-medium text-[#0071e3]">Projects</span>
         <h2 className="text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-5xl">
@@ -17,7 +20,7 @@ export default function Projects() {
           <FadeIn
             key={project.title}
             delay={0.1}
-            className="overflow-hidden rounded-3xl border border-[#d2d2d7] bg-white shadow-[0_20px_50px_-25px_rgba(0,0,0,0.15)]"
+            className="overflow-hidden rounded-3xl border border-[#d2d2d7] bg-white shadow-[0_20px_50px_-25px_rgba(0,0,0,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(0,113,227,0.25)]"
           >
             <div className="p-8 sm:p-10">
               <div className="flex flex-wrap items-center gap-2">
